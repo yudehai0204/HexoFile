@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>android 自动播放Banner | Yudehai0204</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="先看一下效果图 支持本地图片以及网络图片or本地网络混合。">
+<meta name="keywords" content="Android">
+<meta property="og:type" content="article">
+<meta property="og:title" content="android 自动播放Banner">
+<meta property="og:url" content="http://yoursite.com/2017/04/28/android-自动播放Banner/index.html">
+<meta property="og:site_name" content="Yudehai0204">
+<meta property="og:description" content="先看一下效果图 支持本地图片以及网络图片or本地网络混合。">
+<meta property="og:image" content="http://img.blog.csdn.net/20160115104236488">
+<meta property="og:updated_time" content="2017-05-02T08:51:26.057Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="android 自动播放Banner">
+<meta name="twitter:description" content="先看一下效果图 支持本地图片以及网络图片or本地网络混合。">
+<meta name="twitter:image" content="http://img.blog.csdn.net/20160115104236488">
+  
+    <link rel="alternate" href="/atom.xml" title="Yudehai0204" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/plugin/bganimation/bg.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <div class="outer">
+        <div class="widget-wrap mobile-header">
+  <h3 class="widget-title"></h3>
+  <div class="widget">
+    <img class="avatar" src="https://avatars1.githubusercontent.com/u/10924643?v=3&amp;u=2976c24a8f5e28c2422cf3ab0364be11fa5f0b84&amp;s=400">
+    <h2 class="author">Mr.Yu</h2>
+    <h3 class="description">BlogDescription</h3>
+    <div class="count-box">
+      <a href="/archives"><div><strong>4</strong><br>文章</div></a>
+      <a href="/categories"><div><strong>0</strong><br>分类</div></a>
+      <a href="/tags"><div><strong>1</strong><br>标签</div></a>
+    </div>
+    <ul class="blog-link">
+     
+          <a href="/" title="Home">
+            <li>主页</li>
+          </a>
+        
+          <a href="/archives" title="Archives">
+            <li>归档</li>
+          </a>
+        
+          <a href="/categories" title="Categories">
+            <li>分类</li>
+          </a>
+        
+          <a href="/tags" title="Tags">
+            <li>标签</li>
+          </a>
+        
+    </ul>
+  </div>
+</div>
+
+        <section id="main"><article id="post-android-自动播放Banner" class="wow slideInRight article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/04/28/android-自动播放Banner/" class="article-date">
+  <time class="post-time" datetime="2017-04-28T07:28:17.000Z" itemprop="datePublished">
+    <span class="post-month">4月</span><br/>
+    <span class="post-day">28</span>
+  </time>
+</a>
+   
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      android 自动播放Banner
+    </h1>
+  
+
+        <div>
+          
+          
+              
+
+          
+        </div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="先看一下效果图"><a href="#先看一下效果图" class="headerlink" title="先看一下效果图"></a>先看一下效果图</h3><p><img src="http://img.blog.csdn.net/20160115104236488" alt="这里写图片描述"></p>
+<h4 id="支持本地图片以及网络图片or本地网络混合。"><a href="#支持本地图片以及网络图片or本地网络混合。" class="headerlink" title="支持本地图片以及网络图片or本地网络混合。"></a>支持本地图片以及网络图片or本地网络混合。</h4><a id="more"></a>
+<p>使用方式：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;com.jalen.autobanner.BannerView</div><div class="line">        android:id=&quot;@+id/banner&quot;</div><div class="line">        android:layout_width=&quot;match_parent&quot;</div><div class="line">        android:layout_height=&quot;230dip&quot;&gt;</div><div class="line">&lt;/com.jalen.autobanner.BannerView&gt;</div></pre></td></tr></table></figure>
+<p>核心的实现代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div></pre></td><td class="code"><pre><div class="line"> int length = mList.size();</div><div class="line">        View view = LayoutInflater.from(mContext).inflate(R.layout.banner_view,this,true);</div><div class="line">        LinearLayout ll = (LinearLayout) view.findViewById(R.id.ll_points);</div><div class="line">        vp= (ViewPager) view.findViewById(R.id.vp);</div><div class="line">        ll.removeAllViews();</div><div class="line">        LinearLayout.LayoutParams ll_parmas = new LinearLayout.LayoutParams(LayoutParams.WRAP_CONTENT,LayoutParams.WRAP_CONTENT);</div><div class="line">        ll_parmas.leftMargin=5;</div><div class="line">        ll_parmas.rightMargin=5;</div><div class="line">        for(int i=0;i&lt;length;i++)&#123;</div><div class="line">            ImageView img = new ImageView(mContext);</div><div class="line">            img.setLayoutParams(ll_parmas);</div><div class="line">            if(i==0)&#123;</div><div class="line">                img.setImageResource(R.mipmap.dot_focus);</div><div class="line">            &#125;else&#123;</div><div class="line">                img.setImageResource(R.mipmap.dot_blur);</div><div class="line">            &#125;</div><div class="line">            ll.addView(img);</div><div class="line">            mImgs.add(img);</div><div class="line"></div><div class="line">            final ImageView imgforview = new ImageView(mContext);</div><div class="line">            imgforview.setOnClickListener(this);</div><div class="line">            imgforview.setScaleType(ImageView.ScaleType.FIT_XY);</div><div class="line">            if(mList.get(i).getType()==0)&#123;//本地图片</div><div class="line">                imgforview.setImageResource(mList.get(i).getDrawableforint());</div><div class="line"></div><div class="line">            &#125;else&#123;//网络</div><div class="line">                Glide.with(mContext).load(mList.get(i).getDrawableforurl()).diskCacheStrategy(DiskCacheStrategy.ALL).into(imgforview);</div><div class="line">//                Glide.with(mContext).load(mList.get(i).getDrawableforurl()).listener(new RequestListener&lt;String, GlideDrawable&gt;() &#123;</div><div class="line">//                    @Override</div><div class="line">//                    public boolean onException(Exception e, String model, Target&lt;GlideDrawable&gt; target, boolean isFirstResource) &#123;</div><div class="line">//                        Log.d(&quot;yu&quot;,&quot;Faile:&quot;+e.toString());</div><div class="line">//                        return false;</div><div class="line">//                    &#125;</div><div class="line">//</div><div class="line">//                    @Override</div><div class="line">//                    public boolean onResourceReady(GlideDrawable resource, String model, Target&lt;GlideDrawable&gt; target, boolean isFromMemoryCache, boolean isFirstResource) &#123;</div><div class="line">//                            imgforview.setImageDrawable(resource);</div><div class="line">//                        return false;</div><div class="line">//                    &#125;</div><div class="line">//                &#125;).into(imgforview);</div><div class="line">//                Log.d(&quot;yu&quot;,&quot;url: &quot;+mList.get(i).getDrawableforurl());</div><div class="line">            &#125;</div><div class="line">            mViews.add(imgforview);</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        vp.setAdapter(new MyAdapter());</div><div class="line">        vp.addOnPageChangeListener(onPageChange);</div></pre></td></tr></table></figure>
+<p>自动轮播利用的是handler的postdelay方法。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">private Runnable task = new Runnable() &#123;</div><div class="line">        @Override</div><div class="line">        public void run() &#123;</div><div class="line">            if(isAuto)&#123;</div><div class="line">               currentItem = currentItem%(mViews.size());</div><div class="line">//                Log.d(&quot;yu&quot;,&quot;runalbe &quot;+currentItem);</div><div class="line">                if(currentItem==0)&#123;</div><div class="line">                    vp.setCurrentItem(currentItem,false);</div><div class="line">                &#125;else&#123;</div><div class="line">                    vp.setCurrentItem(currentItem);</div><div class="line">                &#125;</div><div class="line">                currentItem++;</div><div class="line">                mHandle.postDelayed(task,delaytime);</div><div class="line">            &#125;else&#123;</div><div class="line">                mHandle.postDelayed(task,delaytime);</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;;</div></pre></td></tr></table></figure>
+<p>利用isAuto判断是否正在自动轮播 如果为false 不自动切换item。isAuto赋值操作位于OnPageChangeListener的onPageScrollStateChanged方法中：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"> public void onPageScrollStateChanged(int state) &#123;</div><div class="line"></div><div class="line">            switch (state)&#123;</div><div class="line">                case ViewPager.SCROLL_STATE_IDLE://用户什么都没有操作</div><div class="line">                    isAuto=true;</div><div class="line">                    currentItem = vp.getCurrentItem();</div><div class="line">//                    Log.d(&quot;yu&quot;,&quot;IDLE&quot;+currentItem);</div><div class="line">//                    if(vp.getCurrentItem()==mViews.size())&#123;</div><div class="line">//                        vp.setCurrentItem(0,false);</div><div class="line">//                    &#125;</div><div class="line">                    break;</div><div class="line">                case ViewPager.SCROLL_STATE_DRAGGING://正在滑动</div><div class="line">                    isAuto =false;</div><div class="line">                    break;</div><div class="line">                case ViewPager.SCROLL_STATE_SETTLING://滑动结束</div><div class="line">                    isAuto=true;</div><div class="line">                    break;</div><div class="line"></div><div class="line">            &#125;</div><div class="line">        &#125;</div></pre></td></tr></table></figure>
+<p>当状态为SCROLL_STATE_DRAGGING时  说明用户正在操作 ，看下源码中的解释：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">/**</div><div class="line">    * Indicates that the pager is in an idle, settled state. The current page</div><div class="line">    * is fully in view and no animation is in progress.</div><div class="line">    */</div><div class="line">   public static final int SCROLL_STATE_IDLE = 0;</div><div class="line"></div><div class="line">   /**</div><div class="line">    * Indicates that the pager is currently being dragged by the user.</div><div class="line">    */</div><div class="line">   public static final int SCROLL_STATE_DRAGGING = 1;</div><div class="line"></div><div class="line">   /**</div><div class="line">    * Indicates that the pager is in the process of settling to a final position.</div><div class="line">    */</div><div class="line">   public static final int SCROLL_STATE_SETTLING = 2;</div></pre></td></tr></table></figure>
+<p>大致意思呢就是 0代码没有任何操作。1页面正在被用户拖动。2代表成功切换至下一页面。</p>
+<h3 id="源码地址"><a href="#源码地址" class="headerlink" title="源码地址"></a>源码地址</h3><p><a href="https://github.com/yudehai0204/autoBanner" target="_blank" rel="external">点击跳转</a></p>
+<p>有问题随时欢迎Issues;</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/04/28/android-自动播放Banner/" data-id="cj2754vdf0002ocwc7htcivuz" class="article-share-link">分享</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Android/">Android</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2017/04/28/Android适配6-0，全局Dialog终极解决方案/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">上一篇</strong>
+      <div class="article-nav-title">
+        
+          Android适配6.0，全局Dialog终极解决方案
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+  
+</article>
+
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    <div class="widget-wrap">
+  <h3 class="widget-title"></h3>
+  <div class="widget">
+    <h1 class="blog-title">Yudehai0204</h1>
+    <h2 class="blog-subtitle">Blog</h2>
+    <ul class="blog-link">
+     
+          <a href="/" title="Home">
+            <li>主页</li>
+          </a>
+        
+          <a href="/archives" title="Archives">
+            <li>归档</li>
+          </a>
+        
+          <a href="/categories" title="Categories">
+            <li>分类</li>
+          </a>
+        
+          <a href="/tags" title="Tags">
+            <li>标签</li>
+          </a>
+        
+    </ul>
+  </div>
+</div>
+
+  
+    <div class="widget-wrap">
+  <h3 class="widget-title"></h3>
+  <div class="widget">
+    <img class="avatar" src="https://avatars1.githubusercontent.com/u/10924643?v=3&amp;u=2976c24a8f5e28c2422cf3ab0364be11fa5f0b84&amp;s=400">
+    <h2 class="author">Mr.Yu</h2>
+    <h3 class="description">BlogDescription</h3>
+    <div class="count-box">
+      <a href="/archives"><div><strong>4</strong><br>文章</div></a>
+      <a href="/categories"><div><strong>0</strong><br>分类</div></a>
+      <a href="/tags"><div><strong>1</strong><br>标签</div></a>
+    </div>
+
+
+
+    <div class="social-link">
+      
+        <a class="hvr-bounce-in" href="http://github.com/ShanaMaid" target="_blank" title="ShanaMaid">
+          ShanaMaid
+        </a>
+      
+    </div>
+
+    <div class="friend-link">
+      <h2>友情链接</h2>
+      
+        <a class="hvr-bounce-in" href="http://blog.shanamaid.top/" target="_blank" title="ShanaMaid">
+          ShanaMaid
+        </a>
+      
+    </div>
+  </div>
+</div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy;2016 - 2017 Mr.Yu<br>
+      由<a href="http://hexo.io/" target="_blank">Hexo</a>强力驱动 | 
+      主题-<a href="https://github.com/ShanaMaid/hexo-theme-shana">Shana</a>
+      
+    </div>
+    
+  </div>
+</footer>
+    </div>
+    
+
+<script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="//apps.bdimg.com/libs/wow/0.1.6/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>   
+
+
+  <link rel="stylesheet" href="/plugin/fancybox/jquery.fancybox.css">
+  <script src="/plugin/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+  <link rel="stylesheet" href="/plugin/galmenu/GalMenu.css">
+  <script src="/plugin/galmenu/GalMenu.js"></script>
+  <div class="GalMenu GalDropDown">
+      <div class="circle" id="gal">
+        <div class="ring">
+          
+            <a href="/" title="" class="menuItem">首页</a>
+          
+            <a href="/tags" title="" class="menuItem">标签</a>
+          
+            <a href="/categories" title="" class="menuItem">分类</a>
+          
+            <a href="/archives" title="" class="menuItem">归档</a>
+          
+            <a href="http://github.com/yudehai0204" title="" class="menuItem">Github</a>
+          
+            <a href="/xxxxxxx" title="" class="menuItem">xxxx</a>
+          
+        </div>
+        
+          <audio id="audio" src="plugin/galmenu/wulusai.mp3"></audio>
+        
+      </div> 
+</div>
+<div id="overlay" style="opacity: 1; cursor: pointer;"></div>
+  <script type="text/javascript">var items = document.querySelectorAll('.menuItem');
+    for (var i = 0,
+    l = items.length; i < l; i++) {
+      items[i].style.left = (50 - 35 * Math.cos( - 0.5 * Math.PI - 2 * (1 / l) * i * Math.PI)).toFixed(4) + "%";
+      items[i].style.top = (50 + 35 * Math.sin( - 0.5 * Math.PI - 2 * (1 / l) * i * Math.PI)).toFixed(4) + "%"
+    }</script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('body').GalMenu({
+      'menu': 'GalDropDown'
+    })
+  });
+</script>
+
+  <section class="hidden-xs"> 
+  <ul class="cb-slideshow"> 
+    <li><span>苟利</span></li> 
+    <li><span>国家</span></li> 
+    <li><span>生死以</span></li> 
+    <li><span>岂能</span></li> 
+    <li><span>祸福</span></li> 
+    <li><span>趋避之</span></li> 
+  </ul>
+</section>
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
